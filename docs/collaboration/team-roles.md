@@ -1,30 +1,42 @@
 # Team roles and responsibilities
 
-**Team size:** six participants — one coordinator/developer, four other contributors, and one client/stakeholder.
+**Confirmed team structure: five people total.**
 
-Replace role labels with real names/GitHub usernames only after the team confirms the assignments. Do not publish private contact details.
+- You: team leader and developer.
+- Three teammates: developers.
+- One client: stakeholder who validates needs and acceptance behavior.
 
-## Roles
+The client is one of the five people, not an additional sixth participant. Replace the role labels with real names/GitHub usernames once the team has agreed on assignments.
 
-| Slot | Role | Main responsibilities | Expected repository evidence |
+## Role allocation
+
+| Person | Main role | Main responsibility | Expected evidence |
 |---|---|---|---|
-| Member 1 — you | Coordinator and integration developer | Maintain project plan, create/triage Issues, coordinate milestones, integrate reviewed PRs, and own one technical task | Planning/coordination Issues, implementation PRs, reviews, decision records |
-| Member 2 | Requirements and discovery contributor | Review the needs analysis, check FR-01–FR-22 and UC-01–UC-13 against the dossier, identify gaps, prepare acceptance criteria | Authored/revised discovery and specification docs, linked Issues, review responses |
-| Member 3 | Architecture and design contributor | Propose/refine layer boundaries, package structure, domain model, and diagrams | Design documents/diagrams, design review, related tests or prototype |
-| Member 4 | Domain logic and validation contributor | Implement or help test module/task rules, status, priority, time, and checklist behavior | Feature branches, service code, unit tests, PR reviews |
-| Member 5 | UI, persistence, and quality contributor | Implement or help test Tkinter workflows, JSON persistence, file handling, and integration quality | UI/persistence branches, tests, reproducible test evidence, reviews |
-| Client / stakeholder | Needs and acceptance validator | Explain/confirm the intended workflow, review problem statement and acceptance criteria, try agreed scenarios, give feedback | Dated validation notes, acceptance feedback, Issues/comments; coding is optional |
+| You — Team Leader / Developer | Coordination, integration, persistence and quality | Coordinate the work, maintain Issues and milestones, guide architecture, implement JSON persistence/error handling, integrate reviewed work, coordinate final testing | Technical commits/PRs, reviews, integration decisions, test evidence, meeting notes |
+| Teammate A — Developer | Domain model and core module/task logic | Implement models and business rules for modules and tasks; handle CRUD and validation of core entities | Model/service code, unit tests, PRs, review participation |
+| Teammate B — Developer | Tkinter interface and Kanban workflow | Build the main UI, module/task views, Kanban board and status interaction; integrate UI with business services | UI code, screenshots/demo, UI tests, PRs, review participation |
+| Teammate C — Developer | Task productivity features and feature testing | Implement priority/time/checklist/search/local attachment workflows with the other developers; add focused tests | Feature code, tests, acceptance evidence, PRs, review participation |
+| Client — Stakeholder | Needs validation and acceptance testing | Explain/confirm expected student workflow, review needs and acceptance criteria, test agreed user scenarios, report gaps and approve/reject behavior | Dated feedback, validated acceptance criteria, Issues/comments, acceptance test record |
 
-This is a proposed division. The team should adjust it based on actual skills and availability. The client is not counted as a fifth developer and should not be assigned technical work unless they explicitly agree.
+This allocation is a practical starting point. The team may rebalance it after discussing skills and availability, but keep one accountable owner per Issue. Developers must collaborate across layer boundaries; the table is not permission to build isolated, incompatible parts.
 
 ## Shared responsibilities
 
-- Everyone reads the baseline and can explain the requirements relevant to their work.
-- Every contributor creates meaningful work and reviews at least one teammate's change where possible.
-- The author does not approve their own PR.
-- The client validates user-facing behavior; the team remains responsible for technical quality.
-- The coordinator facilitates decisions but does not make every design decision alone.
+- Every developer reads the technical dossier and can explain the requirements relevant to their work.
+- Every developer contributes implementation and tests, and reviews at least one teammate's PR.
+- The PR author cannot approve their own PR.
+- The team leader is also a developer; leadership does not replace technical contribution.
+- The client is not expected to code, manage Git branches, or write tests. They provide authentic user feedback and acceptance validation.
+- The team remains responsible for technical correctness even when the client approves the user experience.
 
-## How to show contribution fairly
+## How contributions are demonstrated
 
-Use GitHub Issues, commits, pull requests, reviews, test evidence, and meeting notes. A person's contribution is the work they actually perform, not the role title in this document. Update this page if assignments change.
+Use actual GitHub Issues, commits, pull requests, code reviews, test evidence, and meeting notes. Do not create artificial commits or assign work to someone who did not do it. Update this page when the team confirms real usernames or changes responsibilities.
+
+## Role-specific instructions
+
+- [Team leader/developer](onboarding/team-leader.md)
+- [Developer A — domain model and core logic](onboarding/developer-a.md)
+- [Developer B — interface and Kanban](onboarding/developer-b.md)
+- [Developer C — task features and tests](onboarding/developer-c.md)
+- [Client/stakeholder guide](onboarding/client-guide.md)
