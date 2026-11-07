@@ -41,7 +41,8 @@ Cloud synchronization, friend networks or messaging, an integrated chatbot, faci
 3. Open the guide matching your role in [role onboarding](docs/collaboration/onboarding/).
 4. Review [the needs analysis](docs/discovery/needs-analysis.md) and [the requirements baseline](docs/specifications/requirements.md).
 5. Check [the development plan](docs/planning/development-plan.md) and your assigned GitHub Issues.
-6. Follow [CONTRIBUTING.md](CONTRIBUTING.md) before creating a branch or pull request.\n7. See [the Project board setup guide](docs/collaboration/project-board-setup.md) for the team's task board.
+6. Follow [CONTRIBUTING.md](CONTRIBUTING.md) before creating a branch or pull request.
+7. See [the Project board setup guide](docs/collaboration/project-board-setup.md) for the team's task board.
 
 ## Repository map
 
