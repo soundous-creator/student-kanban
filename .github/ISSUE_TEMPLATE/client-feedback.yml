@@ -1,7 +1,6 @@
 name: Client feedback / acceptance
 description: Record client feedback on a requirement or testable version
 title: "[CLIENT FEEDBACK] "
-labels: ["client-feedback"]
 body:
   - type: markdown
     attributes:
