@@ -2,7 +2,7 @@
 
 **StudentKanban** is an offline-first desktop application for organizing university modules, assignments, and study tasks.
 
-> Project status: planning and collaborative development. Features are not considered complete until implemented, tested, reviewed, and merged.
+> **Team:** five people — one team leader/developer, three developers, and one client/stakeholder.
 
 ## At a glance
 
@@ -32,15 +32,16 @@
 - Local session management, including logout.
 
 ### Explicitly out of scope
-Cloud synchronization, friend networks or messaging, an integrated chatbot, facial recognition, remote PDF-analysis APIs, and Kubernetes orchestration.
+Cloud synchronization, friend networks or messaging, an integrated chatbot, facial recognition, remote PDF-analysis APIs, and Kubernetes.
 
 ## Start here
 
-1. Read [the collaboration guide](docs/collaboration/workflow.md).
-2. Read [team roles and the client role](docs/collaboration/team-roles.md).
-3. Review [the needs analysis](docs/discovery/needs-analysis.md) and [the requirements baseline](docs/specifications/requirements.md).
-4. Check the [development plan](docs/planning/development-plan.md) and open GitHub Issues.
-5. Follow [CONTRIBUTING.md](CONTRIBUTING.md) before creating a branch or pull request.
+1. Read [the five-person team guide](docs/collaboration/team-roles.md).
+2. Read [the collaboration workflow](docs/collaboration/workflow.md).
+3. Open the guide matching your role in [role onboarding](docs/collaboration/onboarding/).
+4. Review [the needs analysis](docs/discovery/needs-analysis.md) and [the requirements baseline](docs/specifications/requirements.md).
+5. Check [the development plan](docs/planning/development-plan.md) and your assigned GitHub Issues.
+6. Follow [CONTRIBUTING.md](CONTRIBUTING.md) before creating a branch or pull request.
 
 ## Repository map
 
@@ -52,9 +53,9 @@ Cloud synchronization, friend networks or messaging, an integrated chatbot, faci
 | `docs/design/` | Architecture and data model |
 | `docs/planning/` | Incremental development plan |
 | `docs/testing/` | Test strategy and requirement traceability |
-| `docs/collaboration/` | Roles, workflow, decisions, and meeting records |
-| `src/` | Application source code (to be added as implementation begins) |
-| `tests/` | Automated tests (to be added with implementation) |
+| `docs/collaboration/` | Roles, workflow, decisions, onboarding, meeting records |
+| `src/` | Application source code |
+| `tests/` | Automated tests |
 
 ## Architecture
 
@@ -73,15 +74,15 @@ The UI must not own persistence or domain rules.
 - Work is performed on short-lived branches and proposed through pull requests.
 - Every pull request must reference an Issue, explain its changes, and include relevant tests or a reason why tests are not applicable.
 - At least one teammate other than the author reviews each pull request.
-- The client validates needs and acceptance behavior; the client does not need to write application code.
+- The client validates needs and acceptance behavior; coding is not required for the client role.
 - Decisions and scope changes are recorded rather than silently changing the baseline.
 
 See [the workflow](docs/collaboration/workflow.md) for the exact rules.
 
 ## Project reference
 
-The technical design dossier is the source baseline for the functional scope, use cases, architecture constraints, increments, and traceability. The repository includes a dedicated location for the unchanged original PDF. If the PDF is not yet visible in `docs/reference/`, it still needs to be uploaded by a repository maintainer; do not replace it with an edited copy.
+The original technical design dossier is the immutable source baseline. See [the reference folder guide](docs/reference/README.md) for its intended repository path and upload status.
 
 ## Current status
 
-This repository is being organized for transparent team work. A requirement written in this README or the dossier is a target, not proof that the feature is already implemented.
+This repository contains the project plan and collaboration documentation. A requirement written here or in the dossier is a target, not proof that the feature is already implemented.
