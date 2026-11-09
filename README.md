@@ -4,8 +4,6 @@ StudentKanban is an offline-first desktop application that helps students organi
 
 ## Project scope
 
-The application is built with Python 3 and Tkinter. It stores application data locally in JSON and does not require an internet connection or a remote server.
-
 ### Phase 1 — Core application
 - Create, view, edit, and delete university modules.
 - Create, view, edit, and delete tasks linked to an existing module.
@@ -23,8 +21,6 @@ The application is built with Python 3 and Tkinter. It stores application data l
 - Temporary 30-second lockout after three consecutive incorrect password attempts.
 - Local session management, including logout.
 
-### Explicitly out of scope
-Cloud synchronization, friend networks or messaging, an integrated chatbot, facial recognition, remote PDF analysis APIs, and Kubernetes orchestration.
 
 ## Architecture
 
