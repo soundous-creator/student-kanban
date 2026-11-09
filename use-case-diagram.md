@@ -13,19 +13,13 @@
 
 ## Use cases
 
-### Phase 1 — Core application (teal)
+###  Core application (teal)
 - **Manage modules**: create, view, edit, delete modules.
 - **Manage tasks**: create, view, edit, delete tasks linked to an existing module. Includes *Set task priority*, *Track time* (estimated and actual), *Manage checklist* (one level), *Attach local file*, and *Validate inputs*.
 - **View Kanban board**: three columns, À faire, En cours, Terminé.
 - **Search by title**: search tasks by title.
 - **Open attached file**: extends *Attach local file*; the OS default application opens the file.
 - **Save and restore**: automatic save to local JSON, restore at startup.
-
-### Phase 2 — Local security (purple)
-- **Unlock app**: includes *Verify password* and *Start local session*.
-- **Temporary lockout**: extends *Unlock app*; 30 seconds after three consecutive incorrect passwords.
-- **Lock app (log out)**: ends the local session.
-- **Validate inputs**: required fields and numeric values (also used by Phase 1).
 
 All use cases in the "Unlocked app" zone require an active local session.
 
