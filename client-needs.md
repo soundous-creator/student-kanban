@@ -9,11 +9,7 @@ I am a student. I want one application on my computer where I keep my university
 ## 2. My three most important needs
 
 ### 2.1 Security: only I can open my data
-- When I open the application, it asks for my password before showing anything.
-- If I type the wrong password **3 times in a row**, I must wait **30 seconds** before I can try again. The screen tells me how many seconds are left.
-- I can **lock the application** at any moment, and it goes back to the password screen.
-- There is **no account** to create and no website to log in to. Just one password for the application.
-- My password is never visible or saved in a readable way.
+i want the access to the app just by me 
 
 ### 2.2 Local storage: my data stays on my computer
 - Everything is saved **on my computer only**. Nothing is sent to the internet.
