@@ -7,8 +7,6 @@
 | Actor | Role |
 |---|---|
 | Student | Primary actor. Uses the application after unlocking it with the local app password. There is no account or registration. |
-| OS default application | Secondary actor. Opens attached files. |
-| Local JSON storage | Secondary actor. Holds the persisted data. |
 | ChatGPT online service | Secondary actor, **proposed extension only**. |
 
 ## Use cases
