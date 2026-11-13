@@ -1,0 +1,59 @@
+name: Client feedback / acceptance
+description: Record client feedback on a requirement or testable version
+title: "[CLIENT FEEDBACK] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to record feedback from the designated client/stakeholder. Do not include passwords, private files, or sensitive personal information.
+  - type: input
+    id: scenario
+    attributes:
+      label: Scenario or requirement
+      description: For example, create a task, move a card, or FR-10.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit tested
+      description: Enter the branch, PR, release, or commit if known.
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      description: List the steps you actually performed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: Describe the actual result. If the feature is not implemented yet, say so.
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Feedback outcome
+      options:
+        - Meets my expectation
+        - Needs correction
+        - Not implemented yet
+        - Requirement is unclear
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+    validations:
+      required: false

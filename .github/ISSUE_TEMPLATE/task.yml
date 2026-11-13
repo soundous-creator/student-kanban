@@ -1,0 +1,39 @@
+name: Task / feature
+description: Propose a scoped project task with traceability and acceptance criteria
+title: "[TASK] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this needed?
+      description: Describe the user need or engineering reason.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: State what is included and excluded.
+    validations:
+      required: true
+  - type: input
+    id: traceability
+    attributes:
+      label: Requirement IDs
+      description: For example FR-05, UC-02, B-02.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable outcomes that can be checked.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies / notes
+    validations:
+      required: false
