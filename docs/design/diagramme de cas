@@ -1,0 +1,86 @@
+
+@startuml
+title StudentKanban - Diagramme de Cas d'Utilisation
+
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+actor "Étudiant" as E
+actor "ChatGPT" as AI
+
+rectangle "StudentKanban (Application Desktop Locale)" {
+
+  package "Gestion des modules" {
+    usecase "Gérer les modules" as M
+    usecase "Ajouter un module" as AM
+    usecase "Modifier un module" as MM
+    usecase "Supprimer un module" as SM
+  }
+
+  package "Gestion des tâches" {
+    usecase "Gérer les tâches" as T
+    usecase "Ajouter une tâche" as AT
+    usecase "Modifier une tâche" as MT
+    usecase "Supprimer une tâche" as ST
+    usecase "Rechercher par titre" as R
+    usecase "Définir la priorité" as P
+    usecase "Suivre le temps" as TIME
+    usecase "Gérer la checklist" as C
+    usecase "Valider les données" as V
+    usecase "Sauvegarder les données" as S
+  }
+
+  package "Espace de travail" {
+    usecase "Accéder à l'espace de travail" as W
+    usecase "Consulter les notes" as N
+    usecase "Accéder au chat" as CH
+    usecase "Ouvrir les fichiers PDF" as PDF
+    usecase "Joindre un fichier local" as F
+    usecase "Ouvrir un fichier joint" as OF
+    usecase "Afficher le tableau Kanban" as K
+  }
+
+  usecase "Communiquer avec ChatGPT" as CHATGPT
+}
+
+E --> M
+E --> T
+E --> R
+E --> TIME
+E --> C
+E --> W
+E --> K
+E --> N
+E --> CH
+E --> PDF
+E --> F
+E --> OF
+E --> CHATGPT
+
+AI --> CHATGPT
+
+AM ..> V : <<include>>
+MM ..> V : <<include>>
+AT ..> V : <<include>>
+MT ..> V : <<include>>
+
+AM ..> S : <<include>>
+MM ..> S : <<include>>
+SM ..> S : <<include>>
+AT ..> S : <<include>>
+MT ..> S : <<include>>
+ST ..> S : <<include>>
+
+P ..> T : <<extend>>
+TIME ..> T : <<extend>>
+C ..> T : <<extend>>
+F ..> T : <<extend>>
+
+OF ..> T : <<extend>>
+
+N ..> W : <<extend>>
+CH ..> W : <<extend>>
+PDF ..> W : <<extend>>
+
+@enduml
